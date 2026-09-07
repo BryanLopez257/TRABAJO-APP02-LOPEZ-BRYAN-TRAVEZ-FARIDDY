@@ -1,0 +1,19 @@
+# Flutter
+**/build/
+**/.dart_tool/
+**/.idea/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/ephemeral/
+
+# .NET
+**/bin/
+**/obj/
+**/.vs/
+*.user
+
+# General
+*.log
+.DS_Store
+Thumbs.db
