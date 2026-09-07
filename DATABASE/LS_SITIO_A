@@ -1,0 +1,18 @@
+--SITIO A
+--CREAR MI LINKED SERVER
+EXEC sp_addlinkedserver
+@server='LS_SITIO_A',
+@srvproduct='',
+@provider='SQLNCLI',
+@datasrc='172.28.176.1,1450\DISTRIBUIDAS',
+@provstr = N'encrypt=yes;trustservercertificate=yes;'
+
+EXEC sp_addlinkedsrvlogin
+@rmtsrvname='LS_SITIO_A',
+@useself='false',
+@rmtuser='sa',
+@rmtpassword='1850452242br25@'
+
+select * from LS_SITIO_A.MEDICITY_A.dbo.CITA_MEDICA_SA;
+SELECT * FROM LS_SITIO_A.MEDICITY_A.DBO.CIUDAD_SA;
+select * from LS_SITIO_A.MEDICITY_A.dbo.PACIENTE_SA;
